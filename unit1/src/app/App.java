@@ -1,32 +1,25 @@
 package app;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-      boolean livesInOtsego = false;
-      char firstLetterOfDadsName = 'D';
-      byte numOfPets = 4;
-      short numOfMoneyIHave = 1503;
-      int numOfGamerPointsIHave = 72000;
-      long numOfMoneyWishIHad = 1000000000;
-      float amountOfMoneyCandyBarCost = 4.99f; 
-      double veryLongMathAnswer =8.274950367; 
+      Scanner input = new Scanner(System.in);
 
+      System.out.println("please enter your name");
+      String FirstName = input.nextLine();
+      System.out.println("please enter your last name");
+      String LastName = input.nextLine();
+      System.out.println("please enter your grade");
+      String Grade = input.nextLine();
+      System.out.println("please enter your age");
+      String Age = input.nextLine();
+      System.out.println("Please enter your favriote color");
+      String FavColor = input.nextLine();
 
-      System.out.println("very long math answer");
-      System.out.println(veryLongMathAnswer);
-      System.out.println("amount of mony a candy bar costs");
-      System.out.println(amountOfMoneyCandyBarCost);
-      System.out.println("Number of moneyt i wish I had");
-      System.out.println(numOfMoneyWishIHad);
-      System.out.println("Number of gamer points i have");
-      System.out.println(numOfGamerPointsIHave);
-      System.out.println("nuber of money i have");
-      System.out.println(numOfMoneyIHave);
-      System.out.println("number of pets I have");
-      System.out.println(numOfPets);
-System.out.println("the first letter of my dads name");
-System.out.println(firstLetterOfDadsName);
-      System.out.println("do i live Otsego");
-     System.out.println(livesInOtsego);
+      System.out.println("hello,  " + FirstName + LastName);
+      System.out.println("you are in grade  " + Grade);
+      System.out.println("you are " + Age + "years old");
+      System.out.println("your favriote color is " + FavColor);
+
     }
 }
