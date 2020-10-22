@@ -8,22 +8,19 @@ public class App {
     public static void main(String[] args) throws Exception {
       Scanner input = new Scanner(System.in);
 
-      System.out.println("please enter a number");
-	int num1 = input.nextInt();
+      System.out.println("what is the temature outside");
+      int temp = input.nextInt();
       input.nextLine();
 
-      System.out.println("please enter a bigger number");
-      int num2 = input.nextInt();
-      input.nextLine();
+      if(temp < 32 );
+      System.out.println("it is freezing out");
 
-      num1++;
+        if(temp > 32 );
+        System.out.println("it is not freezing out");
 
-      while (num1 < num2);{
 
-        if(num1 % 2 == 0)
-        System.out.println(num1);
-      }
-      num1++;
+      
+
 
     }
 }
