@@ -1,14 +1,29 @@
 package app;
 
+import java.util.Scanner;
+
+
 
 public class App {
     public static void main(String[] args) throws Exception {
-      int Count = 0;
+      Scanner input = new Scanner(System.in);
 
-      while (Count <= 1000) {
-        System.out.println("the Count is"  + Count);
-        Count = Count + 1;
+      System.out.println("please enter a number");
+	int num1 = input.nextInt();
+      input.nextLine();
+
+      System.out.println("please enter a bigger number");
+      int num2 = input.nextInt();
+      input.nextLine();
+
+      num1++;
+
+      while (num1 < num2);{
+
+        if(num1 % 2 == 0)
+        System.out.println(num1);
       }
+      num1++;
 
     }
 }
