@@ -7,17 +7,33 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
       Scanner input = new Scanner(System.in);
+      String  password = "11237!";
+      int tries = 0;
+      boolean secretPassword = false;
 
-      System.out.println("what is the temature outside");
-      int temp = input.nextInt();
-      input.nextLine();
+      while (tries < 3){
+          if (secretPassword == false){
+              System.out.println("please enter your password");
+              String enteredPasswod = input.nextLine();
 
-      if(temp < 32 );
-      System.out.println("it is freezing out");
+                if (enteredPasswod.equals(password)) {
+                    System.out.println("Correct Password");
+                    secretPassword = true ;
+                }
 
-        if(temp > 32 );
-        System.out.println("it is not freezing out");
+                else {
+                    System.out.println("wrong Password");
+                    tries++;
+                    System.out.println("you have " + (3 - tries) + " chances left");
+                }
+          }
+          
+      }
 
+      if (tries == 3)  {
+         System.out.println("out of attemps");
+      }
+     
 
       
 
