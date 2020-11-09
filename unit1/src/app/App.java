@@ -1,31 +1,38 @@
 package app;
 
-
-
-
+import java.util.Scanner;
 
 public class App {
     
 
     public static void main(String[] args) throws Exception {
-     int count = 0;
-      String color ="red";
-      boolean True;
     
+        Scanner input = new Scanner(System.in);
 
-      while (count <= 10) {
-          System.out.println("the count is "  + count);
-          count = count +1;
-      }
+        int correctNum = 49;
+        boolean isComplete = false;
 
-      while (color == "red") {
-          System.out.println("THe color is " + color);
-          color = "green";
-      }
+        while (isComplete == false)  {
 
-      while (True = True) {
-      System.out.println("the answer is " + True);
-      True = false;
+            System.out.println("pick a number between 0 and 100");
+            int pick = input.nextInt();
+            input.nextLine();
+
+            if (pick == correctNum) {
+                System.out.println("Correct");
+                isComplete = true;
+            }
+
+            else if (pick < correctNum) {
+                System.out.println("Low");
+            }
+
+            else {
+                System.out.println("High");
+            }
+        }
+
+      
       }
 
 
@@ -33,6 +40,6 @@ public class App {
 
 
     }
-}
+
     
     
