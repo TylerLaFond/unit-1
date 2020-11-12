@@ -9,28 +9,26 @@ public class App {
     
         Scanner input = new Scanner(System.in);
 
-        int correctNum = 49;
-        boolean isComplete = false;
+        System.out.println("please enter a noun");
+        String noun1 = input.nextLine();
 
-        while (isComplete == false)  {
+        System.out.println("please enter a verb");
+        String verb = input.nextLine();
 
-            System.out.println("pick a number between 0 and 100");
-            int pick = input.nextInt();
-            input.nextLine();
+        System.out.println("please enter a noun");
+        String noun2 = input.nextLine();
 
-            if (pick == correctNum) {
-                System.out.println("Correct");
-                isComplete = true;
-            }
+        System.out.println("please enter s adjective");
+        String adjective = input.nextLine();
 
-            else if (pick < correctNum) {
-                System.out.println("Low");
-            }
+        System.out.println("Please ente a adverb");
+        String adverb = input.nextLine();
 
-            else {
-                System.out.println("High");
-            }
-        }
+
+
+        System.out.println("there was a " + noun1 + " which was very " +  verb + ". there was a " + noun2 + " next to it which was " + adjective + " than the other. Althought they were both " + adverb);
+        
+
 
       
       }
